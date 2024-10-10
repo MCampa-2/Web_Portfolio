@@ -16,10 +16,10 @@ function showMore(){
         let moreInfo = document.getElementById("more-info");
         if(moreInfo.style.display === "none"){
             moreInfo.style.display = "block";
-            button.innerHTML = "Show Less";
+            button.textContent = "Show Less";
         }else{
             moreInfo.style.display = "none";
-            button.innerHTML = "Show More"
+            button.textContent = "Show More"
         }
     });
 }
