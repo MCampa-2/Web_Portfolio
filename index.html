@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
     <title>Document</title>
 </head>
@@ -23,16 +24,16 @@
     </div>
     <!--Hero Section-->
     <div class="hero_section">
-        <h1>I'm Michael</h1>
-        <p>a<em> web</em> developer.</p>
-        <button class="contact-button"><a href="mailto:michael.campagnoli@protonmail.com">Contact</a></button>
+        <h1 data-aos="fade-right" data-aos-duration="3000">I'm Michael</h1>
+        <p data-aos="fade-left" data-aos-duration="3000">a<em> web</em> developer.</p>
+        <button data-aos="fade-up" data-aos-duration="3000"  class="contact-button"><a href="mailto:michael.campagnoli@protonmail.com">Contact</a></button>
     </div>
     <!--About-->
     <section id="About" class="About">
-            <img src="images/Me.jpg">
+            <img data-aos="flip-right" data-aos-duration="3000" src="images/Me.jpg">
         <div class="info">
-            <h2>About Me</h2>
-            <p>
+            <h2 data-aos="fade-down" data-aos-duration="3000">About Me</h2>
+            <p data-aos="fade-left" data-aos-duration="3000">
                 My name is Michael Campagnoli and I am a web developer with multiple years of experience in creating visually appealing user-friendly 
                 websites and applications. I have a strong understanding of HTML, CSS, JavaScript, React, Node js, and MongoDB the "MERN Stack" which I use to bring designs to life.
             </p>
@@ -43,13 +44,13 @@
                 </p>
                 <p>My passion for design and user experience drives me to create visually stunning and intuitive websites that provide an exceptional user experience.</p> 
             </div>
-            <button id="show-more">Show More</button>
+            <button data-aos="fade-up" data-aos-duration="3000" id="show-more">Show More</button>
         </div>
     </section>
 
     <!--Projects -->
     <section class="Projects" id="Projects">
-       <h2>Projects</h2>
+       <h2 data-aos="fade-down" data-aos-duration="3000">Projects</h2>
        <div class="project-container">
         <div class="projects-info">
             <h3>Astepp Above Salon</h3>
@@ -117,7 +118,11 @@
     </footer>
 
     
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="main.js"></script>
+    <script>
+        AOS.init();
+      </script>
    
 </body>
 </html>
